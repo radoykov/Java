@@ -20,13 +20,13 @@ public class Human {
         return lastName;
     }
 
-    private void setFirstName(String name) {
+    public void setFirstName(String name) {
         if (!name.isEmpty()) {
             this.firstName = name;
         }
     }
 
-    private void setLastName(String name) {
+    public void setLastName(String name) {
         if (!name.isEmpty()) {
             this.lastName = name;
         }

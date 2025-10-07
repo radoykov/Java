@@ -10,7 +10,7 @@ public class Student extends Human {
         return grade;
     }
 
-    private void setGrade(float num) {
+    public void setGrade(float num) {
         if (num >= 2 && num <= 6) {
             this.grade = num;
         } else {

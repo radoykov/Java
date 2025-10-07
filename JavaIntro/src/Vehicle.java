@@ -14,7 +14,7 @@ class Vehicle {
         setColor(color);
     }
 
-    private void setColor(String color) {
+    public void setColor(String color) {
         this.color = color;
     }
 

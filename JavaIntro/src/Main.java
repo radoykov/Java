@@ -9,7 +9,7 @@ public class Main {
 
         System.out.println(car.getColor());
         System.out.println(car2.getColor());
-
+        car.setColor("yellow");
         car.displayInfo();
         car2.displayInfo();
     }

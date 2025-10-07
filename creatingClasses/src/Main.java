@@ -15,4 +15,5 @@ void main() {
     rating.addRating(4.75);
     rating.calculate();
     rating.displayInfo();
+    cat.setYears(10);
 }

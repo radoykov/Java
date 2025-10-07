@@ -8,6 +8,7 @@ public class Main {
         System.out.println(inh);
         inh.getInfo();
 
+
         System.out.println(sample.sum() + " " + sample.sum(1, 10));
 
         System.out.println("Exercise students <-->");
@@ -23,6 +24,8 @@ public class Main {
         students[7] = new Student("A8", "B8", 2.80f);
         students[8] = new Student("A9", "B9", 5f);
         students[9] = new Student("A10", "B10", 6f);
+
+        students[2].setGrade(6);
 
         Arrays.sort(students, (s1, s2) -> Double.compare(s1.getGrade(), s2.getGrade()));
         for(Student student : students){

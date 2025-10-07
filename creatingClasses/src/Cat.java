@@ -23,15 +23,15 @@ class Cat {
         System.out.printf("LeftLives: %d %n years: %d %n color: %s %n lostLives : %d %n countOfCats : %d %n", getLeftLives(), getYears(), getColor(), getLostLives(), getCount());
     }
 
-    private void setLeftLives(int leftLives) {
+    public void setLeftLives(int leftLives) {
         this.leftLives = leftLives;
     }
 
-    private void setYears(int years) {
+    public void setYears(int years) {
         this.years = years;
     }
 
-    private void setColor(String color) {
+    public void setColor(String color) {
         this.color = color;
     }
 

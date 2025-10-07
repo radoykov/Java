@@ -22,11 +22,11 @@ public class Worker extends Human {
         return calculatedSalary;
     }
 
-    private void setSalaryPerDay(double salary) {
+    public void setSalaryPerDay(double salary) {
         this.salaryPerDay = salary;
     }
 
-    private void setHours(int hours) {
+    public void setHours(int hours) {
         this.hours = hours;
     }
 
