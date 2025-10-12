@@ -1,4 +1,5 @@
 void main() {
+    /*
     Car car = new Car(455, "mustang", 10, "V8", "GTS");
     car.displayOn();
 //    car.printInfo();
@@ -19,4 +20,24 @@ void main() {
     Truck truck = new Truck(230, "Ford", 60, "meat");
     station.refuelVehicle(truck, 2);
     truck.displayOn();
+
+     */
+
+    GasStation gasStation = new GasStation(5000, "Shell", "Sofia");
+    gasStation.displayInfo();
+    Car car = new Car("Toyota Corolla", 25, 50, 4);
+    gasStation.refuelVehicle(car, 20);
+    car.displayInfo();
+
+    Truck truck = new Truck("Volvo FH", 80, 200, 5);
+    gasStation.refuelVehicle(truck, 100);
+    truck.displayInfo();
+
+    //
+    Bus bus = new Bus("Mercedes", 20, 90, 20);
+    gasStation.refuelVehicle(bus, 15);
+    bus.displayInfo();
+
+    gasStation.refuelVehicle(bus, 1000);
+    bus.displayInfo();
 }

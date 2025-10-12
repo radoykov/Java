@@ -1,4 +1,29 @@
-public class Car extends Vehicle implements Refuelable{
+public class Car extends Vehicle {
+    private int doorCount;
+
+    public Car(String model, double currentFuelLevel , double fuelTankCapacity, int doorCount) {
+        super(model, currentFuelLevel, fuelTankCapacity);
+        setDoorCount(doorCount);
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("DoorCount : " +  doorCount);
+    }
+
+    public int getDoorCount() {
+        return doorCount;
+    }
+
+    public void setDoorCount(int doorCount) {
+        if (doorCount > 0) {
+            this.doorCount = doorCount;
+        }
+    }
+}
+
+/* public class Car extends Vehicle implements Refuelable{
     private String engine;
     private String type;
 
@@ -35,3 +60,4 @@ public class Car extends Vehicle implements Refuelable{
 //        System.out.println("engine : " + engine + " type : " + type);
 //    }
 }
+ */
